@@ -1,0 +1,232 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
+    color: #333;
+    text-align: center;
+    max-width: 1000px;  /* Restricts the width of the content */
+    margin: 0 auto; /*centers the content.*/
+
+}
+
+/* Header */
+header {
+/*    background-color: #FFF8C6;*/
+    background-color: white;
+/*    background-color: #E8E8E8;*/
+
+    color: black;
+    padding: 10px 40px; 
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-transform: uppercase;  /* Uppercase for navigation */
+    letter-spacing: 1px;  /* Adds spacing between button letters */
+    text-decoration: none;
+    color: black;
+    font-size: 1.0rem;
+
+    padding-bottom: 4px; /* Adjust space between text and underline */
+    border-bottom: 3px solid transparent; /* Default border */
+    transition: border-color 0.2s ease;
+}
+
+nav ul li a:hover {
+ border-bottom: 3px solid #F9592E; /* Chunky underline color */
+}
+
+/* About Section */
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 40px;
+    background-color: white;
+    justify-content: flex-start;
+}
+
+.about-image img {
+    width: 300px;
+    height: auto;
+    padding-right: 20px;
+    border-radius: 8px;
+}
+
+.about-text {
+    font-family: 'Noto Serif JP', serif; /* Use Noto Serif JP font for body */
+    max-width: 700px; /* Previously was set to 500*/
+    padding-left: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+.about-text h2 {
+    font-size: 1.3rem;
+    margin-bottom: 8px; /* previously 15*/
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Projects Section */
+.projects {
+    padding: 20px 50px 20px 50px; /* Top: 0, Right: 40px, Bottom: 20px, Left: 40px */
+/*    background-color: #E8E8E8;*/
+    background-color: white;
+
+}
+
+.projects h2 {
+    text-transform: uppercase;  /* Uppercase for navigation */
+    letter-spacing: 1px;  /* Adds spacing between button letters */
+    font-weight: 700;
+    font-size: 1.3rem;  /* previously 1.2*/
+    margin-bottom: 15px;
+}
+
+/* Portfolio Grid */
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    column-gap: 60px; /* 60px space between columns (left & right gap) */
+    row-gap: 30px; /* Adds 60px gap only between rows (bottom spacing) */
+    justify-items: center;
+}
+
+/* Portfolio Item */
+a.portfolio-item {
+/*    background-color: #E8E8E8;*/
+background-color: #FEEBE6;
+
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: black; /* Set to black or any other color you prefer */
+    text-decoration: none;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent content overflow */
+    margin-right: 0px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+/* Image */
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    max-height: 66%;
+    object-fit: contain;
+    object-position: center;
+    padding-top: 10px;
+}
+
+/* Project Info */
+.project-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Takes available space */
+    min-height: 0; /* Prevents forced expansion */
+    overflow: hidden;
+    margin-top: 8px; /* Add spacing between image and text */
+}
+
+/* Project Title */
+.project-title h3 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+}
+
+/* Project Description */
+.project-description {
+    font-weight: normal;
+    font-size: 0.8rem;
+    color: black;
+    text-align: left;
+    flex-shrink: 1; /* Allows description to be cut off if necessary */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 4px; /* Add spacing between image and text */
+    margin-left: 10px;
+    margin-right: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit lines before cutting off */
+    -webkit-box-orient: vertical;
+}
+
+/* Buttons Section */
+.project-buttons {
+    display: flex;
+    justify-content: left;
+    margin-top: auto; /* Push to the bottom */
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-shrink: 0; /* Prevents buttons from shrinking */
+    padding-top: 5px;
+}
+
+/* Button */
+.project-buttons .btn {
+/*    background-color: #000;
+    color: #fff;*/
+    color: black;
+    padding: 4px 0px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    min-width: 50px;
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.icon-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the image scales properly */
+}
+}
+
+.project-buttons .btn:hover {
+    background-color: #333;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.1); /* Increases size on hover */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: white;  /* Dark background for contrast */
+  color: black;  /* White text for readability */
+  font-size: 14px;
+}

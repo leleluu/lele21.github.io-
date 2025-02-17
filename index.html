@@ -1,10 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <meta charset="utf-8">
- <title>Lele Luu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Link to Montserrat and Noto Serif JP font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Hello!</h1>
+    <!-- Header Section with Navigation Menu -->
+    <header>
+        <h1>Lele Luu</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Apps</a></li>
+                <!-- <li><a href="#projects">Sketchbook</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="about-image">
+            <img src="images/profile.svg" alt="Profile Picture">
+        </div>
+        <div class="about-text">
+            <h2>Hello,</h2>
+            <!-- <p>I am a web developer and designer passionate about creating beautiful, user-friendly websites. Here is a collection of my recent projects.</p> -->
+             <p>I'm an iOS developer passionate about creating joyful and user-friendly apps. I approach every project with a mix of creativity and practical problem-solving to deliver functional and thoughtful experiences. Here is a collection of my work.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Apps</h2>
+        <div class="portfolio">
+            <a href = "https://apple.co/4bCSHWX" class="portfolio-item">
+                <img src="images/parrot.svg" alt="Project 1">
+                <div class="project-info">
+                    <div class="project-title">
+                        <h3>Parrot</h3>
+                    </div>
+                    <div class="project-description">
+                        <p>Pixel Editor for creating and exporting pixel art. </p>
+                    </div>
+                </div>
+            </a>
+            <a href = "https://apps.apple.com/us/app/pomodino/id6474138296" class="portfolio-item">
+                <img src="images/pomodino.svg" alt="Project 2">
+                <div class="project-info">
+                    <div class="project-title">
+                        <h3>Pomodino</h3>
+                    </div>
+                    <div class="project-description">
+                        <p>Pomodoro timer with coloured themes and Live Activities. </p>
+                    </div>
+                    <div class="project-buttons">
+                    </div>
+                </div>
+            </a>
+            <a href = "https://github.com/leleluu/PalettePal" target="_blank" rel="noopener noreferrer" class="portfolio-item">
+                <img src="images/palettepal.svg" alt="Project 3">
+                <div class="project-info">
+                    <div class="project-title">
+                        <h3>Palette Pal</h3>
+                    </div>
+                    <div class="project-description">
+                        <p>Colour palette app that lets you collect, save and explore colour combinations.</p>
+                    </div>
+                    <div class="project-buttons">
+                    </div>
+                </div>
+            </a>
+            <a href = "https://github.com/leleluu/DailySteps" target="_blank" rel="noopener noreferrer" class="portfolio-item">
+                <img src="images/stepcounter.svg" alt="Project 4">
+                <div class="project-info">
+                    <div class="project-title">
+                        <h3>Daily Steps</h3>
+                    </div>
+                    <div class="project-description">
+                        <p>Daily step counter using HealthKit to collect your steps. </p>
+                    </div>
+                    <div class="project-buttons">
+                    </div>
+                </div>
+            </a>
+            <a href = "https://github.com/leleluu/TicTacToeSafari" target="_blank" rel="noopener noreferrer" class="portfolio-item">
+                <img src="images/tictactoe.svg" alt="Project 5">
+                <div class="project-info">
+                    <div class="project-title">
+                        <h3>Tic Tac Toe</h3>
+                    </div>
+                    <div class="project-description">
+                        <p>Classic game of Tic Tac Toe with a playful twist. </p>
+                    </div>
+                    <div class="project-buttons">
+                    </div>
+                </div>
+            </a>
+<!--             <a href = "https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer" class="portfolio-item">
+                <img src="images/animation.svg" alt="Project 6">
+                <div class="project-info">
+                    <div class="project-title">
+                        <h3>Animations</h3>
+                    </div>
+                    <div class="project-description">
+                        <p>Experiment with gestures and SwiftUI animations. </p>
+                    </div>
+                    <div class="project-buttons">
+                    </div>
+                </div>
+            </a> -->
+            </div>
+        </div>
+    </section>
+
 </body>
+
+<footer>
+  <p>© 2025 Lele Luu. All rights reserved.</p>
+</footer>
+
 </html>
