@@ -275,3 +275,17 @@ footer {
   color: black;  /* White text for readability */
   font-size: 14px;
 }
+
+
+/* Remove underline on mobile (touch devices) */
+@media (hover: none) and (pointer: coarse) {
+  nav ul li a:hover {
+    border-bottom: 3px solid transparent; /* No underline on mobile hover */
+  }
+}
+/* Remove hover effect on smaller screens */
+@media (max-width: 768px) {
+  .portfolio-item:hover {
+    transform: none; /* Disable the scale effect on smaller screens */
+  }
+}
