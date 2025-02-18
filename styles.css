@@ -55,6 +55,21 @@ nav ul li a:hover {
  border-bottom: 3px solid #F9592E; /* Chunky underline color */
 }
 
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack logo/title and menu */
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu items */
+        gap: 10px;
+        padding-top: 10px;
+    }
+}
+
 /* About Section */
 .about {
     display: flex;
@@ -65,6 +80,7 @@ nav ul li a:hover {
     padding: 20px 40px;
     background-color: white;
     justify-content: flex-start;
+    margin: 0 auto; /* Ensures content stays centered */
 }
 
 .about-image img {
@@ -89,6 +105,27 @@ nav ul li a:hover {
 .about-text p {
     font-size: 1.1rem;
     line-height: 1.6;
+}
+
+/* Responsive About section */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Stack image & text */
+        align-items: center;
+        text-align: center; /* Center text */
+    }
+
+    .about-image img {
+        padding-right: 0; /* Remove right padding */
+        margin-bottom: 15px; /* Add spacing between image and text */
+    }
+
+    .about-text {
+        padding-left: 0; /* Remove left padding */
+        max-width: 90%; /* Ensure text fits */
+/*        text-align: center; /* Center text */*/
+
+    }
 }
 
 /* Projects Section */
@@ -145,6 +182,14 @@ background-color: #FEEBE6;
     object-fit: contain;
     object-position: center;
     padding-top: 10px;
+}
+
+/* Responsive design for single column layout */
+@media (max-width: 768px) {
+    .portfolio {
+        grid-template-columns: 1fr; /* Force single column */
+        justify-content: center; /* Center grid items */
+    }
 }
 
 /* Project Info */
